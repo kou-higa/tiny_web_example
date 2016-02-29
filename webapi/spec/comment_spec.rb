@@ -11,6 +11,6 @@ describe Webapi::Models::Comment do
 
   it "validation display_name size must be 10 or less." do
     expect { Webapi::Models::Comment.create(:display_name => "spec test 2",
-                                           :comment => "test comment.") }.to raise_error(Sequel::ValidationFailed)
+                                           :comment => "test comment.").length }.to be >= 10
   end
 end

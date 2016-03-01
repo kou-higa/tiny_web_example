@@ -23,7 +23,7 @@ vifs="vifs.json"
 
 # instance-specific parameter
 cpu_cores="1"
-hypervisor="kvm"
+hypervisor="openvz"
 memory_size="512"
 image_id="${IMAGE_ID}"
 ssh_key_id="ssh-cicddemo"
